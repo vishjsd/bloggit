@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} bp {% endblock title %}
+{% block body %} 
+
+    <div class="container my-3">
+        <h2 class="blog-post-title">{{post.tite}}</h2>
+        <p class="blog-post-meta">January 1, 2014 by <a href="/about">{{post.author}}</a></p>
+
+        <p>{{post.content}}</p>
+        <hr>
+    </div>
+    <div class="container">
+    <h2> Comments</h2>
+    <div class="row my-3">
+    <div class="col-md-2 bg-success"> image here</div>
+    <div class="col-md-10 bg-primary"> comment here</div>
+    </div>
+    </div>
+
+{% endblock body %}
